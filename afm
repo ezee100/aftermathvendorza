@@ -1,0 +1,128 @@
+aftermathvendorza/
+│ index.html
+│ styles.css
+│ script.js
+│
+└─ items/
+    ├─ item1.html
+    ├─ item2.html
+    └─ item3.html
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; line-height:1.6; background:#f9f9f9; color:#333; }
+a { text-decoration:none; color:#ff5c5c; }
+.navbar { display:flex; justify-content:space-between; align-items:center; background:#222; padding:10px 20px; }
+.navbar .logo { color:#fff; font-size:1.5em; font-weight:bold; }
+.navbar ul { list-style:none; display:flex; }
+.navbar li { margin-left:20px; }
+.navbar a { color:#fff; font-weight:bold; }
+.hero { padding:60px 20px; text-align:center; background:#f4f4f4; }
+.hero h1 { font-size:2.4em; margin-bottom:20px; }
+.hero p { margin-bottom:20px; font-size:1.2em; }
+.btn { display:inline-block; padding:10px 20px; background:#ff5c5c; color:#fff; border-radius:5px; transition:0.3s; }
+.btn:hover { background:#e04c4c; }
+.features { display:flex; flex-wrap:wrap; justify-content:space-around; padding:40px 20px; }
+.feature { flex:1 1 250px; background:#fff; margin:10px; padding:20px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1); text-align:center; }
+.feature h2 { margin-bottom:10px; }
+.feature p { margin-bottom:10px; }
+footer { text-align:center; padding:20px; background:#222; color:#fff; }
+@media(max-width:768px) { .features { flex-direction:column; } }
+// Global JS for interactive buttons
+console.log("Aftermath Vendor ZA site loaded");
+
+document.querySelectorAll(".btn").forEach(btn => {
+    btn.addEventListener("click", e => {
+        e.preventDefault();
+        alert("This button is functional! Replace link with your payment processor when ready.");
+    });
+});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aftermath Vendor ZA</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a class="logo" href="index.html">Aftermath Vendor ZA</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="items/item1.html">Shop Items</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Welcome to Aftermath Vendor ZA</h1>
+    <p>Your trusted platform for buying and reselling exclusive products.</p>
+    <a class="btn" href="items/item1.html">Browse Items</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Item 1</h2>
+      <p>Exclusive product description here.</p>
+      <a class="btn" href="items/item1.html">View & Buy</a>
+    </div>
+    <div class="feature">
+      <h2>Item 2</h2>
+      <p>Exclusive product description here.</p>
+      <a class="btn" href="items/item2.html">View & Buy</a>
+    </div>
+    <div class="feature">
+      <h2>Item 3</h2>
+      <p>Exclusive product description here.</p>
+      <a class="btn" href="items/item3.html">View & Buy</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Aftermath Vendor ZA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Item 1 - Aftermath Vendor ZA</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <a class="logo" href="../index.html">Aftermath Vendor ZA</a>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="item1.html">Item 1</a></li>
+      <li><a href="item2.html">Item 2</a></li>
+      <li><a href="item3.html">Item 3</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+<h1>Item 1</h1>
+<p>Full description of Item 1. Replace this text with your product details.</p>
+<a class="btn" href="#">Buy Now</a>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2025 Aftermath Vendor ZA</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
